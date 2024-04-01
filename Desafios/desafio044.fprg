@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 05:09:23 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjA1OjAyOjA1ICI7MjcwNQ=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjA1OjA5OjIzICI7MTsyODIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="aIdade" type="Integer" array="True" size="20"/>
+            <declare name="peso" type="Real" array="True" size="20"/>
+            <declare name="soma" type="Integer" array="False" size=""/>
+            <input variable="aIdade"/>
+            <input variable="peso"/>
+            <for variable="aIdade" start="1" end="-1" direction="inc" step="1">
+                <if expression="aIdade&gt;1 &amp;&amp; aIdade &lt;=10">
+                    <then>
+                        <assign variable="soma" expression="peso/aIdade"/>
+                        <output expression="soma" newline="True"/>
+                    </then>
+                    <else>
+                        <if expression="aIdade&gt;11 &amp;&amp; aIdade &lt;=20">
+                            <then>
+                                <assign variable="soma" expression="peso/aIdade"/>
+                                <output expression="soma" newline="True"/>
+                            </then>
+                            <else>
+                                <if expression="aIdade&gt;21 &amp;&amp; x &lt;=30">
+                                    <then>
+                                        <assign variable="soma" expression="peso/aIdade"/>
+                                        <output expression="soma" newline="True"/>
+                                    </then>
+                                    <else>
+                                        <if expression="aIdade&gt;30">
+                                            <then>
+                                                <assign variable="soma" expression="peso/aIdade"/>
+                                                <output expression="soma" newline="True"/>
+                                            </then>
+                                            <else>
+                                                <assign variable="soma" expression="peso/aIdade"/>
+                                                <output expression="soma" newline="True"/>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Gabriel.Lopes"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 04:05:03 "/>
+        <attribute name="created" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjExOjA3OjMxICI7MjcwNg=="/>
+        <attribute name="edited" value="R2FicmllbC5Mb3BlcztOVDM1OzIwMjQtMDMtMDY7IjA0OjA1OjAzICI7NDsyODE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, soma, i, par, impar" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="soma" expression="0"/>
+            <assign variable="impar" expression="0"/>
+            <assign variable="par" expression="0"/>
+            <for variable="i" start="3" end="10" direction="inc" step="1">
+                <assign variable="soma" expression="soma+(a+b)"/>
+                <assign variable="a" expression="b"/>
+                <assign variable="b" expression="a+b"/>
+                <if expression="soma%2==0">
+                    <then>
+                        <assign variable="par" expression="(i-1) - (i+1)"/>
+                        <output expression="par" newline="True"/>
+                    </then>
+                    <else>
+                        <assign variable="impar" expression="(i-1) + (i-1)"/>
+                        <output expression="impar" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="helo&#237;sa.godoy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-31 09:09:32 "/>
+        <attribute name="created" value="aGVsb8Otc2EuZ29kb3k7REVTS1RPUC03QUVFSlBHOzIwMjQtMDEtMzE7IjA5OjA4OjMwICI7MzcxOQ=="/>
+        <attribute name="edited" value="aGVsb8Otc2EuZ29kb3k7REVTS1RPUC03QUVFSlBHOzIwMjQtMDEtMzE7IjA5OjA5OjMyICI7MTszODMw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <assign variable="c" expression="a*b"/>
+            <output expression="c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

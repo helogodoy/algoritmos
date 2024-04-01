@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="heloisa.godoy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:53:35 "/>
+        <attribute name="created" value="aGVsb2lzYS5nb2RveTtOVDMyOzIwMjQtMDMtMDQ7IjA5OjI0OjU4ICI7Mjc5NA=="/>
+        <attribute name="edited" value="aGVsb2lzYS5nb2RveTtOVDMyOzIwMjQtMDMtMDQ7IjA5OjUzOjM1ICI7MjsyOTAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, c, d, u" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="c" expression="n/100"/>
+            <assign variable="d" expression="(n/10)%10"/>
+            <assign variable="u" expression="n%10"/>
+            <output expression="&quot;n&#250;mero: &quot;&amp;n&amp;&quot; ao contr&#225;rio: &quot;&amp;u&amp;d&amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="helo&#237;sa.godoy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-01-29 10:32:49 "/>
+        <attribute name="created" value="aGVsb8Otc2EuZ29kb3k7REVTS1RPUC03QUVFSlBHOzIwMjQtMDEtMjk7IjA4OjI1OjU0ICI7MzczMA=="/>
+        <attribute name="edited" value="aGVsb8Otc2EuZ29kb3k7REVTS1RPUC03QUVFSlBHOzIwMjQtMDEtMjk7IjEwOjMyOjQ5ICI7ODszODQw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="In&#237;cio do Exemplo de rotina de repeti&#231;&#227;o FAZER"/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <assign variable="c" expression="1"/>
+            <do expression="c&lt;=100">
+                <if expression="c%17 ==0">
+                    <then>
+                        <output expression="c" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="c" expression="c+1"/>
+            </do>
+            <comment text="Fim do Exemplo de rotina de repeti&#231;ao de FAZER"/>
+            <comment text="In&#237;cio do Exemplo de c&#243;digo de repeti&#231;ao ENQUANTO"/>
+            <assign variable="b" expression="1"/>
+            <while expression="b&lt;=100">
+                <if expression="b%13 ==0">
+                    <then>
+                        <output expression="b" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="b" expression="b+1"/>
+            </while>
+            <comment text="Fim do Exemplo de c&#243;digo de repeti&#231;ao ENQUANTO"/>
+            <comment text="In&#237;cio do Exemplo do c&#243;digo de repeti&#231;ao PARA"/>
+            <for variable="a" start="1" end="100" direction="inc" step="1">
+                <if expression="a%7 == 0">
+                    <then>
+                        <output expression="a" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="a" expression="a+1"/>
+            </for>
+            <comment text="Fim do Exemplo de c&#243;digo de repeti&#231;&#227;o PARA"/>
+        </body>
+    </function>
+</flowgorithm>

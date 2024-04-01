@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="heloisa.godoy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-02-19 09:25:13 "/>
+        <attribute name="created" value="aGVsb2lzYS5nb2RveTtOVDMyOzIwMjQtMDItMTk7IjA5OjA2OjQwICI7Mjc5MA=="/>
+        <attribute name="edited" value="aGVsb2lzYS5nb2RveTtOVDMyOzIwMjQtMDItMTk7IjA5OjI1OjEzICI7MjsyOTAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="nomearq" type="String" array="False" size=""/>
+            <assign variable="nomearq" expression="&quot;C:\Users\heloisa.godoy\Documents\Algoritmos-hel&#244;&quot;"/>
+            <read variable="nomearq"/>
+            <open expression="" mode="read"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="heloisa.godoy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 09:12:55 "/>
+        <attribute name="created" value="aGVsb2lzYS5nb2RveTtOVDMyOzIwMjQtMDMtMDQ7IjA5OjA4OjMzICI7Mjc4OQ=="/>
+        <attribute name="edited" value="aGVsb2lzYS5nb2RveTtOVDMyOzIwMjQtMDMtMDQ7IjA5OjEyOjU1ICI7MjsyODk3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="angulo" type="Real" array="False" size=""/>
+            <input variable="angulo"/>
+            <output expression="&quot;O Cosseno &#233;:&quot;" newline="True"/>
+            <output expression="cos(angulo)" newline="True"/>
+            <output expression="&quot;O seno &#233;:&quot;" newline="True"/>
+            <output expression="sin(angulo)" newline="True"/>
+            <output expression="&quot;A Tangente &#233;:&quot;" newline="True"/>
+            <output expression="tan(angulo)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

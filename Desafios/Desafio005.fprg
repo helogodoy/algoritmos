@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="heloisa.godoy"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-04 10:22:06 "/>
+        <attribute name="created" value="aGVsb2lzYS5nb2RveTtOVDMyOzIwMjQtMDMtMDQ7IjA5OjUzOjQyICI7Mjc4OQ=="/>
+        <attribute name="edited" value="aGVsb2lzYS5nb2RveTtOVDMyOzIwMjQtMDMtMDQ7IjEwOjIyOjA2ICI7MjsyODg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cemkw, kw, sm, n, f" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira o sal&#225;rio min&#237;mo&quot;" newline="True"/>
+            <input variable="sm"/>
+            <output expression="&quot;Insira a quantidade de Kw/h consumido&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="cemkw" expression="sm/7"/>
+            <assign variable="kw" expression="cemkw/100"/>
+            <assign variable="f" expression="kw*n"/>
+            <output expression="&quot;Valor em R$ de cada Kw/h: R$ de cada Kh/h: R$&quot;&amp;kw" newline="True"/>
+            <output expression="&quot;Valor em R$ a ser pago &#233; R$&quot;&amp;f" newline="True"/>
+            <assign variable="f" expression="f*0.9"/>
+            <output expression="&quot;Com desconto de 10%: R$&quot;&amp;f" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

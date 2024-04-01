@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Mateus.augusto"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-03-06 04:38:59 "/>
+        <attribute name="created" value="TWF0ZXVzLmF1Z3VzdG87TlQzNzsyMDI0LTAzLTA2OyIwMzowNToyNiAiOzI5MDE="/>
+        <attribute name="edited" value="TWF0ZXVzLmF1Z3VzdG87TlQzNzsyMDI0LTAzLTA2OyIwNDozODo1OSAiOzE7MzAyMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="mensagem" type="String" array="False" size=""/>
+            <declare name="A, E, I, O, U, vogais, n" type="Integer" array="False" size=""/>
+            <input variable="mensagem"/>
+            <assign variable="A" expression="0"/>
+            <assign variable="E" expression="0"/>
+            <assign variable="I" expression="0"/>
+            <assign variable="O" expression="0"/>
+            <assign variable="U" expression="0"/>
+            <for variable="n" start="0" end="len(mensagem)-1" direction="inc" step="1">
+                <if expression="Char(mensagem,n)==&quot;a&quot; || Char(mensagem,n)==&quot;A&quot;">
+                    <then>
+                        <assign variable="a" expression="a+1"/>
+                    </then>
+                    <else>
+                        <if expression="Char(mensagem,n)==&quot;e&quot; || Char(mensagem,n)==&quot;E&quot;">
+                            <then>
+                                <assign variable="e" expression="e+1"/>
+                            </then>
+                            <else>
+                                <if expression="Char(mensagem,n)==&quot;i&quot; || Char(mensagem,n)==&quot;I&quot;">
+                                    <then>
+                                        <assign variable="i" expression="i+1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="Char(mensagem,n)==&quot;o&quot; || Char(mensagem,n)==&quot;O&quot;">
+                                            <then>
+                                                <assign variable="o" expression="o+1"/>
+                                            </then>
+                                            <else>
+                                                <if expression="Char(mensagem,n)==&quot;u&quot; || Char(mensagem,n)==&quot;U&quot;">
+                                                    <then>
+                                                        <assign variable="u" expression="u+1"/>
+                                                    </then>
+                                                    <else/>
+                                                </if>
+                                            </else>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;a=&quot;&amp; a &amp;&quot; &quot;&amp; &quot;e=&quot;&amp; e &amp;&quot; &quot;&amp;&quot;i=&quot;&amp; i &amp;&quot; &quot;&amp;&quot;o=&quot; &amp; o &amp;&quot; &quot;&amp;&quot;u=&quot;&amp; u" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
